@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Painel Admin - Criminosos do Discord</title>
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header><h1>Painel Admin</h1></header>
+
+  <section id="loginSection">
+    <h2>Login</h2>
+    <input id="username" placeholder="Usuário" />
+    <input id="password" type="password" placeholder="Senha" />
+    <button id="loginBtn">Entrar</button>
+    <p id="loginMsg"></p>
+  </section>
+
+  <section id="adminSection" style="display:none;">
+    <button id="logoutBtn">Sair</button>
+    <h2>Gerenciar Criminosos</h2>
+    <form id="addCriminalForm">
+      <input id="nameInput" placeholder="Nome" required />
+      <input id="crimeInput" placeholder="Crime" required />
+      <input id="detailsInput" placeholder="Detalhes (opcional)" />
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul id="adminCriminalList"></ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
